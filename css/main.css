@@ -25,3 +25,45 @@ body {
 .icon {
   font-size: 4rem;
 }
+
+.emojis {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "em1 em2"
+  "em3 em4";
+}
+
+.emojis:nth-child(1) {
+  grid-area: em1;
+}
+
+.emojis:nth-child(2) {
+  grid-area: em2;
+}
+
+.emojis:nth-child(3) {
+  grid-area: em3;
+}
+
+.emojis:nth-child(3) {
+  grid-area: em4;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji span {
+  order: -1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.emoji a {
+  margin-top: auto;
+  display: inline-block;
+}
